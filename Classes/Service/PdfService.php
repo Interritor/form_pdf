@@ -37,11 +37,12 @@ class PdfService
      */
     public function generate(
         $pdfFile,
-        $values = []
+        $values = [],
+        $fromLabel = "default"
     )
     {
 
-        $path = Environment::getPublicPath() . '/fileadmin/pdf-config/form-mapping.yaml';
+        $path = Environment::getPublicPath() . sprintf('/fileadmin/pdf-config/%s_form-mapping.yaml', $fromLabel);
         
         if (file_exists($path)) {
             $mapping = Yaml::parseFile($path);

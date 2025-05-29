@@ -63,9 +63,11 @@ class PdfFinisher extends AbstractFinisher
         if (!$pdfTemplateFile) {
             throw new \RuntimeException('PDF template files must be provided.');
         }
-
+        
+        $formLabel = $this->finisherContext->getFormRuntime()->getFormDefinition()->getLabel();
+    
         // Now generate the PDF using the resolved template paths
-        $mpdf = $this->pdfService->generate($pdfTemplateFile, $this->parseForm());
+        $mpdf = $this->pdfService->generate($pdfTemplateFile, $this->parseForm(), $formLabel);
         
     
         // Add the generated PDF and filename to the variable provider

@@ -1,0 +1,65 @@
+# ------------------------------------------------------------------------------
+# PDF Mapping Configuration for TYPO3 Form Extension
+#
+# This file defines the mapping between form field identifiers and their
+# corresponding positions within a PDF file. It is used by a custom TYPO3
+# extension to render submitted form data into predefined PDF templates.
+#
+# 📁 File location (required): fileadmin/form_definitions/
+# The configuration file must be placed in this directory.
+#
+# 📄 File naming convention (important for multiple forms):
+# You can create different configurations for multiple forms by using the
+# following filename structure:
+#
+#     <form-identifier>_form-mapping.yaml
+#
+# Example:
+#     contact_form_form-mapping.yaml
+#     job_application_form-mapping.yaml
+#
+# Here, <form-identifier> refers to the "Label" of the form
+# as defined in your TYPO3 form setup. The system will automatically select
+# the correct mapping file based on the submitted form.
+#
+# 🔧 Structure:
+# Each top-level key refers to a PDF page number (1-based).
+# Under each page, define a list of form fields and their rendering properties.
+#
+# Properties per field:
+# - field:       The identifier of the form field from the form definition
+# - x, y:        Position (in mm or PDF units) on the page
+# - fontSize:    Size of the text in the PDF
+# - font:        Font to use (e.g., Arial, Helvetica(default))
+# ------------------------------------------------------------------------------
+
+15:
+  - field: name
+    x: 20
+    y: 122
+    fontSize: 8
+    font: Arial
+    
+  - field: street_number
+    x: 110
+    y: 122
+    fontSize: 8
+    font: Arial
+
+  - field: address
+    x: 110
+    y: 135
+    fontSize: 8
+    font: Arial
+    
+  - field: email
+    x: 20
+    y: 135
+    fontSize: 8
+    font: Arial
+
+3:
+  - field: nachricht
+    x: 40
+    y: 100
+    fontSize: 11

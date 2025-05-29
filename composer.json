@@ -13,7 +13,7 @@
         "typo3/cms-form": "^12.4 || ^13.4",
         "mpdf/mpdf": "^8.1",
         "setasign/fpdf": "^1.8",
-		"setasign/fpdi": "^2.6"
+	    "setasign/fpdi": "^2.6"
     },
     "autoload": {
         "psr-4": {
