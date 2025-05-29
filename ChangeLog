@@ -1,0 +1,42 @@
+* 1.1.2
+  - Composer only version, removing libs from Resources/Private/PHP/
+* 1.1.3
+  – Enable multi page PDF source files
+* 1.2.0
+  – mpdf 8.1
+  – Drop TYPO3 10.4 and add TYPO3 11.5 LTS compatibility
+* 1.3.0
+  – Implement ResponseInterface in PdfResponse.php (Thanks to @gbartolucci)
+  – Confirmation finisher download file name same as PDF template
+* 1.3.1
+  – Improve error message while trying to reload PDF or open the file twice
+  – Add note to the confirmation template about file the deletion
+  – Change 'Open PDF' link to button and disable it after opening the file
+  – Fix undefined variables for filename and langId in confirmation finisher
+* 2.0.0
+  * 9c696c9 [TASK] rename setup.txt to setup.typoscript
+  * 8d3d7d5 [TASK] require TYPO3 ^12.4
+  * 997e4f9 [TASK] improve file matching schema and allow 0 days delete
+  * 2239ab3 [TASK] clean up
+  * 4ab932d [TASK] put back the cleaner logic
+  * e681e55 [TASK] fix scheduler tasks for v12
+  * 230a434 [TASK] v12 compatibility for scheduler task
+  * af22d71 [TASK] clean up for v12
+  * 12d08bb [TASK] fix file handling for v12
+  * 6eaeb3f [TASK] add .gitignore
+  * 8f63d0f [TASK] add editorconfig
+  * 3bb06e0 [TASK] remove legacy configuration file
+  * 64f2c7b [TASK] remove version number
+  * ad0c84a [TASK] change $GLOBALS['TYPO3_REQUEST'] to $request
+  *   433394d Merge pull request #9 from aschmutt/update_v12
+  |\  
+  | * 67d418d Fix error with Standalone View
+  | * f62df2b composer name updated
+  | * 7fb7390 Code Update to TYPO3 v12
+  |/  
+* 2.1.0
+  * 4288b4e [FIX] #13 reinstate original file attachments feature for e-mal finishers
+  * c4f6725 [TASK] clean up
+  * 8d5d208 [TASK] #12 add TYPO3 v13 compatibility
+  * 7145ddb [TASK] #11 Styling for "days" input field in scheduler
+  * 6c9799d [TASK] #10 No TYPO3\CMS\Backend\Form\FormEngine any more

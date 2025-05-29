@@ -1,0 +1,22 @@
+TYPO3:
+    CMS:
+        Form:
+            prototypes:
+                standard:
+                    finishersDefinition:
+                        PdfFinisher:
+                            implementationClassName: Interritor\FormPdf\Domain\Finishers\PdfFinisher
+                        EmailToSender:
+                            implementationClassName: Interritor\FormPdf\Domain\Finishers\EmailFinisher
+                        EmailToReceiver:
+                            implementationClassName: Interritor\FormPdf\Domain\Finishers\EmailFinisher
+                        Confirmation:
+                            implementationClassName: Interritor\FormPdf\Domain\Finishers\ConfirmationFinisher
+                            options:
+                                templateName: ConfirmationWithLink
+                                templateRootPaths:
+                                    20: 'EXT:form_pdf/Resources/Private/Frontend/Templates/Finishers/Confirmation/'
+                    formEditor:
+                        translationFiles: {  }
+                    formEngine:
+                        translationFiles: {  }

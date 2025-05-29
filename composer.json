@@ -1,0 +1,25 @@
+{
+    "name": "interritor/form-pdf",
+    "type": "typo3-cms-extension",
+    "description": "TYPO3 form finisher to write form data into pre-existing PDF file.",
+    "homepage": "https://github.com/interritor/form_pdf/",
+    "keywords": ["typo3", "pdf", "form"],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+
+    ],
+    "require": {
+        "typo3/cms-form": "^12.4 || ^13.4",
+        "mpdf/mpdf": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Interritor\\FormPdf\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "form_pdf"
+        }
+    }
+}
