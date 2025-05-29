@@ -1,5 +1,6 @@
 {
     "name": "interritor/form-pdf",
+    "version": "1.0.0",
     "type": "typo3-cms-extension",
     "description": "TYPO3 form finisher to write form data into pre-existing PDF file.",
     "homepage": "https://github.com/interritor/form_pdf/",
@@ -10,7 +11,9 @@
     ],
     "require": {
         "typo3/cms-form": "^12.4 || ^13.4",
-        "mpdf/mpdf": "^8.1"
+        "mpdf/mpdf": "^8.1",
+        "setasign/fpdf": "^1.8",
+		"setasign/fpdi": "^2.6"
     },
     "autoload": {
         "psr-4": {
