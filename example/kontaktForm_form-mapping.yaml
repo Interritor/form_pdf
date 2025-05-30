@@ -12,13 +12,13 @@
 # You can create different configurations for multiple forms by using the
 # following filename structure:
 #
-#     <form-identifier>_form-mapping.yaml
+#     <form-label>_form-mapping.yaml
 #
 # Example:
 #     contact_form_form-mapping.yaml
 #     job_application_form-mapping.yaml
 #
-# Here, <form-identifier> refers to the "Label" of the form
+# Here, <form-label> refers to the "Label" of the form
 # as defined in your TYPO3 form setup. The system will automatically select
 # the correct mapping file based on the submitted form.
 #
@@ -27,7 +27,7 @@
 # Under each page, define a list of form fields and their rendering properties.
 #
 # Properties per field:
-# - field:       The identifier of the form field from the form definition
+# - field:       The identifier of the form field 
 # - x, y:        Position (in mm or PDF units) on the page
 # - fontSize:    Size of the text in the PDF
 # - font:        Font to use (e.g., Arial, Helvetica(default))
